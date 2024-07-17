@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="cursor"></div>
+
+    <div id="main">
+        <!-- Navigation Bar -->
+        <div id="nav">
+            <div id="navtitle">
+                <h3 align="center">Welcome To Our Website</h3>
+            </div>
+        </div>
+
+        <!-- Design Title -->
+        <div id="designTitle" data-scroll data-scroll-speed="-1">
+        </div>
+
+        <!-- Calculator Section -->
+        <div id="Calculator" data-scroll data-scroll-speed="-2">
+            <div id="calc">
+                <h3 align="center">CALCULATE HERE</h3>
+                <br><br>
+                <form action="">
+                    <label>Total Bill:</label><br>
+                    <input type="text" id="totalBill"><br><br>
+                    <label>Percentage:</label><br>
+                    <input type="text" id="percentage"><br><br>
+                    <label>Number Of People:</label><br>
+                    <input type="text" id="numberOfPeople"><br><br>
+                    <label>Total Tip For Each Person:</label><br>
+                    <div id="box"></div><br><br>
+                    <input type="button" value="Calculate Now" id="subButton">
+                </form>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div id="aboutUs">
+            <br> <br> 
+            <div id="au" data-scroll data-scroll-speed="2">
+                <h3 align="center">About Us</h3><br>
+                <p>Welcome to TipCalculator.com, your trusted companion for calculating the perfect tip at your favorite restaurants and bars. Our mission is to make dining out a more enjoyable and stress-free experience by providing a simple and intuitive tool for calculating the right amount to leave for your server.</p><br><br>
+                <p><b>Our Story</b><br>
+                    TipCalculator.com was founded by a group of friends who were tired of the hassle and uncertainty that came with trying to figure out the right tip. They wanted a solution that was easy to use, accurate, and accessible to everyone. After months of development, our team created a user-friendly tip calculator that can be used anywhere, at any time.</p>
+            </div><br><br>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div id="contactus" data-scroll data-scroll-speed="3">
+            <div id="contactusContent">
+                <h3 align="center">Contact Us</h3><br>
+                <p>We're here to help you with any questions or concerns you may have about our Tip Calculator. Whether you need assistance with using the calculator, have a suggestion for improvement, or simply want to provide feedback, we're here to listen and help.</p><br><br>
+                <p><b>Contact Information</b><br>
+                    Email: support@tipcalculator.com<br>
+                    Phone: +91***** *****<br>
+                    Address: Plot Number: *** , XYZ Nagar, Nagpur<br></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Locomotive Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
